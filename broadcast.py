@@ -2,7 +2,7 @@
 import asyncio
 from pyrogram import filters
 from pyrogram.errors import FloodWait
-from OFICAL_CHAT_BOT903_Dev.main import BRANDEDCHAT as app
+from main import BRANDEDCHAT as app
 from pymongo import MongoClient
 import os
 
