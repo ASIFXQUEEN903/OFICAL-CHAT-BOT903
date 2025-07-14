@@ -36,7 +36,7 @@
         },
         "STKR": {
             "description": "Put your stker id otherwise not start perporly",
-            "required": false,
+            "required": true,
             "value": "CAACAgUAAxkBAAEOxbdoWln3bXut27cwii0Uxy-zltlzHAACYQUAAv-7OFbUM1qnUk4VFjYE"
         },
         
