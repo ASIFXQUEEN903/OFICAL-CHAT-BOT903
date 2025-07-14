@@ -468,4 +468,38 @@ async def vickprivatesticker(client: Client, message: Message):
                await message.reply_sticker(f"{hey}")
 
 print(f"{BOT_NAME} ɪs ᴀʟɪᴠᴇ!")      
+
+# Broadcast command using MongoDB
+from pyrogram.errors import FloodWait
+SUDOERS = [123456789]  # Replace with your Telegram user ID
+
+@BRANDEDCHAT.on_message(filters.command("broadcast") & filters.user(SUDOERS))
+async def broadcast_message(client, message):
+    if not message.reply_to_message:
+        return await message.reply_text("Reply to a message to broadcast.")
+
+    mongo_client = MongoClient(MONGO_URL)
+    db = mongo_client["chatbot"]
+
+    chats = db["chats"].find()
+    users = db["users"].find()
+
+    sent = 0
+    failed = 0
+    for target in list(chats) + list(users):
+        tid = target.get("chat_id") or target.get("user_id")
+        if not tid:
+            continue
+        try:
+            await client.forward_messages(tid, message.chat.id, message.reply_to_message.id)
+            sent += 1
+            await asyncio.sleep(0.2)
+        except FloodWait as e:
+            await asyncio.sleep(e.value)
+        except:
+            failed += 1
+
+    await message.reply_text(f"✅ Broadcast done.\nSent: {sent}\nFailed: {failed}")
+
+
 BRANDEDCHAT.run()
