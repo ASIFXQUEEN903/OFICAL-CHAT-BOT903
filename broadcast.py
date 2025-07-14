@@ -14,7 +14,7 @@ db = client["chatbot"]
 chats_col = db["chats"]
 users_col = db["users"]
 
-SUDOERS = [123456789]  # 🔁 Replace with your Telegram user ID
+SUDOERS = [5099049612]  # 🔁 Replace with your Telegram user ID
 
 @app.on_message(filters.command("broadcast") & filters.user(SUDOERS))
 async def broadcast_message(client, message):
