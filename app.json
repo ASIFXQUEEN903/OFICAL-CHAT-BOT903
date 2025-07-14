@@ -34,6 +34,11 @@
             "description": "Start Image For Bot.",
             "required": false
         },
+        "STKR": {
+            "description": "Put your stker id otherwise not start perporly",
+            "required": false,
+            "value": "CAACAgUAAxkBAAEOxbdoWln3bXut27cwii0Uxy-zltlzHAACYQUAAv-7OFbUM1qnUk4VFjYE"
+        },
         
         "API_ID": {
             "description": "telegram api id here",
