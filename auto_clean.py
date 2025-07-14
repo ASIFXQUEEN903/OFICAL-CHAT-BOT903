@@ -1,7 +1,7 @@
 
 import asyncio
 from pyrogram.enums import ChatMembersFilter
-from OFICAL_CHAT_BOT903_Dev.main import BRANDEDCHAT as app
+from main import BRANDEDCHAT as app
 from pymongo import MongoClient
 import os
 
