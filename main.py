@@ -134,11 +134,11 @@ async def restart(client, m: Message):
                         text = f"{g}")
         await asyncio.sleep(1)
         await accha.edit("🦋ꜱᴛᴀʀᴛ ᴍᴀɴᴇ ᴋɴ ᴀᴜᴜ ᴋᴀʜᴀᴋᴜ ᴋᴀʜᴜᴄʜᴀ ᴍᴜ ᴊᴀɴɪ ᴘᴀʀᴜɴɪ........❤️")
-        await asyncio.sleep(0.5)
-        await accha.edit("ɴᴀʜɪ ᴍᴜ ᴇᴛᴇ ᴊᴀʟᴅɪ ꜱᴜᴇɴɪ ᴀᴜᴜ ᴘᴀʀᴇ ᴋʜᴀɪʙɪ")
         await asyncio.sleep(0.10)
+        await accha.edit("ɴᴀʜɪ ᴍᴜ ᴇᴛᴇ ᴊᴀʟᴅɪ ꜱᴜᴇɴɪ ᴀᴜᴜ ᴘᴀʀᴇ ᴋʜᴀɪʙɪ")
+        await asyncio.sleep(0.30)
         await accha.edit("ᴀʀᴇ ᴘʟꜱ ʙᴜᴊʜᴀ ᴛᴋ ᴍᴜ ɪɴꜱᴛᴀɢʀᴀᴍ ꜱᴀᴛᴀʀᴇ ᴜꜱᴇ ᴋᴀʀᴇɴɪ ᴅᴇᴋʜᴀ ꜱꜱ........")
-        await asyncio.sleep(0.20)
+        await asyncio.sleep(0.50)
         await accha.delete("ɴᴀᴠᴇᴇɴ ᴋᴜ ᴋᴀʜɪᴅᴀʙᴀ ᴋɪ ᴍᴜ ᴀᴄᴏᴜɴᴛ ᴅᴇʟᴇᴛᴇ ᴋᴀʀɪᴅᴇʙɪ ᴀᴊɪ.........")
         umm = await m.reply_sticker(
                   sticker = STKR,
